@@ -1,4 +1,12 @@
 Projectmongodb::Application.routes.draw do
+  resources :questions_quizzes
+
+  resources :quizzes
+
+  resources :questions
+
+  resources :hints
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

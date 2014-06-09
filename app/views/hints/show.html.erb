@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tip:</strong>
+  <%= @hint.tip %>
+</p>
+
+<p>
+  <strong>Tutor:</strong>
+  <%= @hint.tutor_id %>
+</p>
+
+<%= link_to 'Edit', edit_hint_path(@hint) %> |
+<%= link_to 'Back', hints_path %>

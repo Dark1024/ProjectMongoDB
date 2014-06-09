@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Questions numbers:</strong>
+  <%= @quiz.questions_numbers %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @quiz.title %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @quiz.value %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @quiz.description %>
+</p>
+
+<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
+<%= link_to 'Back', quizzes_path %>

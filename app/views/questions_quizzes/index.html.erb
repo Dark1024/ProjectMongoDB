@@ -1,0 +1,31 @@
+<h1>Listing questions_quizzes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quiz</th>
+      <th>Question</th>
+      <th>User answer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @questions_quizzes.each do |questions_quiz| %>
+      <tr>
+        <td><%= questions_quiz.quiz_id %></td>
+        <td><%= questions_quiz.question_id %></td>
+        <td><%= questions_quiz.user_answer %></td>
+        <td><%= link_to 'Show', questions_quiz %></td>
+        <td><%= link_to 'Edit', edit_questions_quiz_path(questions_quiz) %></td>
+        <td><%= link_to 'Destroy', questions_quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Questions quiz', new_questions_quiz_path %>

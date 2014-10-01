@@ -34,6 +34,8 @@ gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 
 gem 'puma'
 
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

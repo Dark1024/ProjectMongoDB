@@ -8,5 +8,5 @@ class Question
   field :answer4, type: String
   field :checked, type: Mongoid::Boolean
   field :correct_answer, type: Integer
-  key :question_id, type: Integer
+  field :question_id, type: Integer
 end

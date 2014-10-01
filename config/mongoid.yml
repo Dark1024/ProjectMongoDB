@@ -10,9 +10,6 @@ development:
       # of host:port pairs. (required)
       hosts:
         - localhost:27017
-      username: jjdb
-      password: josuejoel12345
-      
       
       options:
         # Change the default write concern. (default = { w: 1 })
